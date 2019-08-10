@@ -1,5 +1,7 @@
 # Word-Guess-Game
 Hw 3 for UCR CBC - Word Guess Game
+
+
 This is a student exercise consisting of constructing a game app and pushing it to a newly created repo.
 
 The app randomly picks a letter, and then asks the user to guess which letter the app chose.
