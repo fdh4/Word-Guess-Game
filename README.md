@@ -21,6 +21,8 @@ Wins:
      
 Losses:
      (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+     
+     
 Guesses Left:
 
 
