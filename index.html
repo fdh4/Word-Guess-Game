@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Psychic Game</title>
+
 </head>
+
+<!-- Properties of Psychic game pseudo code -->
+
+    <!-- run in the browser -->
+    <!-- feature dynamically updated HTML powered by JavaScript code -->
+    <!-- feature dynamically updated CSS powered by JavaScript code -->
+
+<!-- Psychic game pseudo code-->
+
+    <!-- insert link in index.html to local style.css file-->
+    <!-- insert link in index.html to local game.js file-->
+    <!-- no images for this game so no need for <a ref= "./assests/images/imagefile.png"> 
+         in this game-->
+
+    <!-- tasks to accomplish by executing game code -->
+
+        <!-- initialize all game parameters to start new game -->
+        <!-- generate single random letter and place value in var computerguess-->
+
+        <!-- print the following lables and associated variable value (if any) to the screen 
+             as headers  up to a max of nine times or until userguess matches computer guess-->
+            
+            <!-- h1 The Psychic Game (no variable, does not refresh)
+                 h2 Guess what letter I'm thinking of (no variable, does not refresh)
+                 h2 Wins: var wins   starts at 0 incriments by 1 with each win 
+                 h2 Losses: var losses  starts at 0 losses incriments by 1 with each loss
+                 h2 Guesses left: var guessesleft  starts by 9 and increments by -1 
+                    whith each guess
+                 h2 Your guesses so far: var userguess   starts blank and appends each guess 
+                    seperated by comma without erasing prior guesses if the guess is wrong
+                    (up to 9 guesses) 
+                    var userguess starts blank and changes with each guess; no label for this var-->
+        
+            <!-- await user input -->
+
+                <!-- with each typed guess do the following-->
+
+                    <!-- place user input into userguess-->
+
+                    <!-- compare userguess with computerguess-->
+
+                        <!-- if userguess = computerguess is false (loss) do the following-->
+
+                            <!-- check to see if guessesleft > 0 -->
+
+                                <!-- if guessesleft is > 0 (true) then do the following -->
+                                
+                                    <!-- change the following variables -->
+                                        <!-- increment guessesleft by -1 -->
+                                        <!-- update guess with typed letter -->
+                                        <!-- await user input -->
+
+                                <!-- if guesses left is 0 (false) then do the following -->
+
+                                     <!-- change the following variables -->
+                                        <!-- increment losses by 1 -->
+                                        <!-- reset the guessesleft to 9 -->
+                                        <!-- reset guess to blank-->
+                                        <!-- reset userguess to blank (may not be necessary)-->
+                                        <!-- await user input-->
+
+                        <!--if userguess = computerguess is true (win) do the following -->
+                        
+                            <!-- increment win by 1 -->
+                            <!-- reset the guessesleft to 9 -->
+                            <!-- reset guess to blank-->
+                            <!-- reset userguess to blank (may not be necessary)-->
+                            <!-- await user input-->
+                            
+
 <body>
-    <h1>Placeholder</h1>
+
+    <h1>The Psychic Game</h1>
+    <h2>Guess what letter I'm thinking of</h2>
+
 </body>
+
 </html>
