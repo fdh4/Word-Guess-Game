@@ -1,86 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Psychic Game</title>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="title icon" href="images/title-img.png">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="/skin/pink.flag/jplayer.pink.flag.css"/>
+      <link rel="stylesheet" href="./css/style.css">
+      <title>Name The Artist</title>
+    </head>
 
-</head>
+    <body>
 
-<!-- Properties of Psychic game pseudo code -->
+    <!-- page header -->
+        <div class="container-fluid text-center text-white p-0">
+          <div class="row no-gutters justify-content-center">
 
-    <!-- run in the browser -->
-    <!-- feature dynamically updated HTML powered by JavaScript code -->
-    <!-- feature dynamically updated CSS powered by JavaScript code -->
+            <div class="col-1 d-none d-sm-inline">
+              <img class="img-fluid" width="100%" height="auto%" src="./Images/woodstock/L1jimi.png" alt="responsive image">
+            </div>
 
-<!-- Psychic game pseudo code-->
+            <div class="col-2 d-none d-sm-inline">
+              <img class="img-fluid" width="100%" height="auto%" src="./Images/woodstock/L2joni.png" alt="responsive image">
+            </div>
+           
+            <div class="col-12 col-sm-6">
+              <img class="img-fluid" width="100%" height="auto" src="./Images/woodstock/woodstockLoGo0.png" alt="responsive image">
+            </div>
 
-    <!-- insert link in index.html to local style.css file-->
-    <!-- insert link in index.html to local game.js file-->
-    <!-- no images for this game so no need for <a ref= "./assests/images/imagefile.png"> 
-         in this game-->
+            <div class="col-2 d-none d-sm-inline">
+              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/R2CCR.png" alt="responsive image">
+            </div>
 
-    <!-- tasks to accomplish by executing game code -->
+            <div class="col-1 d-none d-sm-inline">
+              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/R1tya.png" alt="responsive image">
+            </div>
 
-        <!-- initialize all game parameters to start new game -->
-        <!-- generate single random letter and place value in var computerguess-->
+  
+          </div>
+          <!-- end of header -->
+            <!-- ---------------------------------------------------------------------------------------------------------------- 
+            <div class="col-1 d-none d-lg-inline">
+              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/aleeWide2.png" alt="responsive image">
+            </div>
+            <div class=" col-1 d-none d-lg-inline">
+              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/jimiWide2.png" alt="responsive image">
+            </div>
+            <div class="col-2 col-lg-1 d-none d-sm-inline">
+              <img class="img-fluid" width="100%" height="auto" src="./Images/woodstock/bannerDrafts/wide/joniWide2.png" alt="responsive image">
+            </div>
 
-        <!-- print the following lables and associated variable value (if any) to the screen 
-             as headers  up to a max of nine times or until userguess matches computer guess-->
-            
-            <!-- h1 The Psychic Game (no variable, does not refresh)
-                 h2 Guess what letter I'm thinking of (no variable, does not refresh)
-                 h2 Wins: var wins   starts at 0 incriments by 1 with each win 
-                 h2 Losses: var losses  starts at 0 losses incriments by 1 with each loss
-                 h2 Guesses left: var guessesleft  starts by 9 and increments by -1 
-                    whith each guess
-                 h2 Your guesses so far: var userguess   starts blank and appends each guess 
-                    seperated by comma without erasing prior guesses if the guess is wrong
-                    (up to 9 guesses) 
-                    var userguess starts blank and changes with each guess; no label for this var-->
-        
-            <!-- await user input -->
+            <div class="col-12 col-sm-6">
+              <img class="img-fluid" width="100%" height="auto" src="./Images/woodstock/bannerDrafts/logos/woodstockLoGo0.png" alt="responsive image">
+            </div>
 
-                <!-- with each typed guess do the following-->
+            <div class="col-2 col-lg-1 d-none d-sm-inline">
+              <img class="img-fluid" width="100%" height="auto" src="./Images/woodstock/bannerDrafts/wide/joanWide2.png" alt="responsive image">
+            </div>
 
-                    <!-- place user input into userguess-->
+            <div class=" col-1 d-none d-lg-inline">
+              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/CCRWide2.png" alt="responsive image">
+            </div>
+            <div class="col-1 d-none d-lg-inline">
+              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/csny.png" alt="responsive image">
+            </div>
+          </div>
+          -->
+          <div class="banner-text">
+            <span>Woodstock Hangman</span>
+          </div>
+        </div>
 
-                    <!-- compare userguess with computerguess-->
+    <!-- end of header -->
 
-                        <!-- if userguess = computerguess is false (loss) do the following-->
-
-                            <!-- check to see if guessesleft > 0 -->
-
-                                <!-- if guessesleft is > 0 (true) then do the following -->
-                                
-                                    <!-- change the following variables -->
-                                        <!-- increment guessesleft by -1 -->
-                                        <!-- update guess with typed letter -->
-                                        <!-- await user input -->
-
-                                <!-- if guesses left is 0 (false) then do the following -->
-
-                                     <!-- change the following variables -->
-                                        <!-- increment losses by 1 -->
-                                        <!-- reset the guessesleft to 9 -->
-                                        <!-- reset guess to blank-->
-                                        <!-- reset userguess to blank (may not be necessary)-->
-                                        <!-- await user input-->
-
-                        <!--if userguess = computerguess is true (win) do the following -->
-                        
-                            <!-- increment win by 1 -->
-                            <!-- reset the guessesleft to 9 -->
-                            <!-- reset guess to blank-->
-                            <!-- reset userguess to blank (may not be necessary)-->
-                            <!-- await user input-->
-                            
-
-<body>
-
-    <h1>The Psychic Game</h1>
-    <h2>Guess what letter I'm thinking of</h2>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./javaScript/script.js"></script>
 
 </body>
 

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: OldeBarnsby;
+    src: url(./OldeBarnsby.ttf);
+  }
+  
+  body {
+    background-color: rgb(7, 7, 56);
+  }
+
+   .banner-text {
+     margin-top: -15px;
+     padding: 0;
+    font-family: 'OldeBarnsby',serif;
+    font-size: 75px;
+    font-weight: 500;
+    background-color: rgba(7, 7, 56, 0.6);
+  }
