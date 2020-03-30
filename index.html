@@ -1,13 +1,30 @@
 <!DOCTYPE html>
+
+<!-- 4. Display the following on the page:
+
+5. Press any key to get started!
+
+6. Wins: (# of times user guessed the word correctly).
+
+   * If the word is `madonna`, display it like this when the game starts: `_ _ _ _ _ _ _`.
+
+   * As the user guesses the correct letters, reveal them: `m a d o _  _ a`.
+
+7. Number of Guesses Remaining: (# of guesses remaining for the user).
+ 
+8. Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
+
+9. After the user wins/loses the game should automatically choose another word and make the user play it. -->
+
 <html lang="en">
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="title icon" href="images/title-img.png">
+      <link rel="icon" href="./Images/WoodstockIcon.png">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link rel="stylesheet" href="/skin/pink.flag/jplayer.pink.flag.css"/>
       <link rel="stylesheet" href="./css/style.css">
-      <title>Name The Artist</title>
+      <link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap" rel="stylesheet"> 
+      <title>Guess The Woodstock Band</title>
     </head>
 
     <body>
@@ -35,43 +52,44 @@
             <div class="col-1 d-none d-sm-inline">
               <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/R1tya.png" alt="responsive image">
             </div>
+         </div>
+         <div class="row no-gutters justify-content-center banner-text">
+           <div class="col-12">              
+               <span id="que">Guess Who Played</span>             
+           </div>
+         </div>
 
-  
-          </div>
           <!-- end of header -->
-            <!-- ---------------------------------------------------------------------------------------------------------------- 
-            <div class="col-1 d-none d-lg-inline">
-              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/aleeWide2.png" alt="responsive image">
-            </div>
-            <div class=" col-1 d-none d-lg-inline">
-              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/jimiWide2.png" alt="responsive image">
-            </div>
-            <div class="col-2 col-lg-1 d-none d-sm-inline">
-              <img class="img-fluid" width="100%" height="auto" src="./Images/woodstock/bannerDrafts/wide/joniWide2.png" alt="responsive image">
+
+          <!-- center image -->
+
+          <div class="row no-gutters justify-content-center">
+
+            <div class="col-2 d-none d-sm-inline">
+              <img class="img-fluid" id="C2" width="100%" height="auto" src="./Images/woodstock/C2couple.png" alt="responsive image">
             </div>
 
-            <div class="col-12 col-sm-6">
-              <img class="img-fluid" width="100%" height="auto" src="./Images/woodstock/bannerDrafts/logos/woodstockLoGo0.png" alt="responsive image">
-            </div>
-
-            <div class="col-2 col-lg-1 d-none d-sm-inline">
-              <img class="img-fluid" width="100%" height="auto" src="./Images/woodstock/bannerDrafts/wide/joanWide2.png" alt="responsive image">
-            </div>
-
-            <div class=" col-1 d-none d-lg-inline">
-              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/CCRWide2.png" alt="responsive image">
-            </div>
-            <div class="col-1 d-none d-lg-inline">
-              <img class="img-fluid" width="100%" height="auto"  src="./Images/woodstock/bannerDrafts/wide/csny.png" alt="responsive image">
-            </div>
           </div>
-          -->
-          <div class="banner-text">
-            <span>Woodstock Hangman</span>
-          </div>
+
+          <!-- end of center image -->
+
+          <!-- start of gameboard -->
+
+        <div class="row justify-content-start gameboard">
+          <div class="col-12">
+            <p id="start">Press any key to get started!</p>
+            <p id="wins">Wins/Trys: 0 of 0</p>
+            <p id="band"> <span> - - - - - - </span>&ThickSpace;<span> - - - - -</span></p>
+            <p id="soFar">Your Guesses so Far: </p>
+            <p id="guessessLeft">Guesses Left: 13</p>
+          </div>  
         </div>
 
-    <!-- end of header -->
+          <!-- end of gameboard -->
+
+
+        </div>
+    <!-- end of container -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
