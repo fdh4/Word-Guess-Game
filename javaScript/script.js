@@ -2,9 +2,10 @@
 // global variables
 
 // arrays
-
-var abcd = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-var prob = ["8.167", "1.492", "2.202", "4.253", "12.702", "2.228", "2.015", "6.094", "6.966", "0.153", "1.292", "4.025", "2.406", "6.749", "7.507", "1.929", "0.095", "5.987", "6.327", "9.356", "2.758", "0.978", "2.56", "0.15", "1.994", "0.077"]
+var artist = "";
+var artist
+var abcd = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var prob = [0.934, 0.11, 0.549, 0.22, 1.264, 0.165, 0.165, 0.604, 0.714, 0.385, 0.055, 0.495, 0.11, 0.714, 0.659, 0.055, 0, 0.824, 0.495, 0.659, 0.22, 0.165, 0.11, 0.055, 0.22, 0.055];
 
 var performers = ["Arlo Guthrie",  "Carlos Santana", "Country Joe & The Fish", "Credence Clearwater Revival",
                    "Crosby Stills Nash & Young","The Greatful Dead", "Janis Joplin", 
@@ -16,13 +17,15 @@ var songs = ["arlo.mp3", "santana.mp3", "CountryJoe.mp3", "CCR.m4a",
              "jimi.mp3",  "joan.mp3", "joe.mp3", "joni.mp3", "richie.mp3", 
              "tya.mp3", "who.mp3"];
 
+var pics = ["arlo", "santana", "CountryJoe", "CCR", "csny", "jerry", "janis", "jimi", "joan", "joe", "joni","richie", "tya","TheWho"];
+
   // bpL1 is the banner pictures for use in the 1-2-6-2-1 banner layout ant the left 1 grid space, and so on . . .
   // for the url we append L1|R1|L2|R2 and .png as done below
+  
 var bpL1 = ["jerry", "jimi", "joni"];
 var bpL2 = ["joe", "CountryJoe", "jimi", "santana", "alee", "joni"];
 var bpR1 = ["arlo", "janis", "tya"];
 var bpR2 = ["CCR", "csny", "janis", "joan", "richie", "TheWho"];
-
 
 var performerPics = [bpR1 [0],  bpL2[3], bpL2[1], bpR2[0],
                     bpR2[1], bpL1[0], bpR2[2],
@@ -50,8 +53,7 @@ function playIt(sound) {
 }
 // end of function to play sound
 
-// function to fade text
-
+// functions to fade text  Math.floor
 
 function fadeOut(target) {
   console.log(target);
@@ -60,29 +62,33 @@ function fadeOut(target) {
   var elem = document.getElementById(target);   
   var id = setInterval(frame, 10);
   function frame() {
-    if (sopac == fopac) {
+    if (parseInt(sopac) === parseIntr(fopac)) {
       clearInterval(id);
     } else {
-      sopac = sopac - 0.005; 
-      elem.style.opacity = sopac; 
+      sopac =  - 0.005; 
+      elem.style.sopacopacity = sopac; 
       }
   }
 }
 
-/* function fadeIn(element) {
-  var duration = 0.5;
-  var interval = 10;//ms
-  var op = 0.0;
-  var iop = element.style.opacity;
-  var timer = setInterval(function () {
-      if (op >= iop) {
-          op = iop;
-          clearInterval(timer);
+ function fadeIn(target) {
+  console.log(target);
+  var sopac = 0;
+  var fopac = 1;
+  var elem = document.getElementById  (target);   
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (parseInt(sopac) === parseInt(fopac)) {
+      clearInterval(id);
+    } else {
+      sopac = sopac + 0.001;
+      console.log(" Integer sopac = " + parseInt(sopac));
+      console.log("Integer fopac = " + parseInt(fopac));
+      //       op += op/((1000/interval)*duration);
+      elem.style.opacity = sopac; 
       }
-      element.style.opacity = op;
-      op += op/((1000/interval)*duration);
-  }, interval);
-} */
+  }
+}
 
 // procedures
 
@@ -108,7 +114,8 @@ $(document).ready(function() {
     // display 'Press any key to get started!' over center image
 
   // on key stroke
-    // remove msg over center image
+    // fade out msg over center image
+    // highlight letter tov be guessed
     // ignore duplicates
     // if miss 
       // add to keys already guessed
@@ -134,13 +141,9 @@ $(document).ready(function() {
     //console.log(prob[clabcd]);
     // console.log(prob);
 
+    fadeIn("prestart");
+
     document.onkeyup = function(event) {
       fadeOut("start"); 
     };
-     console.log("*");
-    playIt(song);
-      console.log("**");
-/*     fadeIn("start");
-    console.log("**");
- */
 });
