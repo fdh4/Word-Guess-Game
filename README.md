@@ -1,2 +1,2 @@
 # Word-Guess-Game
-Hw 3 for UCR CBC - Word Guess Game
+H0mework week 3 for UCR Coding Boot Camp - Word Guess Game
